@@ -5,8 +5,8 @@ FROM node:22
 WORKDIR /usr/src/app
 
 # Copia os arquivos de definição de dependências e instala-as
-COPY package*.json ./
-RUN npm install
+# COPY package*.json ./
+# RUN npm install
 
 # Copia o restante do código do projeto
 COPY . .
