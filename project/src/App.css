@@ -39,8 +39,38 @@
 
 .main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 15px;
+  gap: 10px;
+  width: 90vw;
+  font-size: calc(10px + 1vmin);
+}
+
+.container {
+  width: 20vw;
+  height: 34vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 5px;
+  background-color:#61dafb;
+  border-radius: 5px;
+  padding: 5px;
+
+  div {
+    width: 20vw;
+
+    p {
+      margin: 5px;
+    }
+  }
+}
+
+input {
+  width: 13vw;
+  margin: 5px;
 }
